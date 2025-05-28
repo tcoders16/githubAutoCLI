@@ -92,7 +92,7 @@ LinkedIn:     ${chalk.underline.cyan("https://www.linkedin.com/in/omkumar-solank
 // • deleteRepo    → Deletes an existing repo you own
 
 // Example:
-// Om-Gitcli "create a private repo named test-bot"
+// Om-GitAI "create a private repo named test-bot"
 // `.trim();
 
 //   console.log(
@@ -129,8 +129,8 @@ function getIntroMessage(): string {
 
   const howToUse = [
     chalk.greenBright("🚀 How to Start:"),
-    `  1. Run: ${chalk.bold.yellow('Om-Gitcli')}`,
-    `  2. Then run commands like: ${chalk.bold.green('Om-Gitcli "create a private repo named my-project"')}`,
+    `  1. Run: ${chalk.bold.yellow('Om-GitAI')}`,
+    `  2. Then run commands like: ${chalk.bold.green('Om-GitAI "create a private repo named my-project"')}`,
     `  3. The AI will convert your message → JSON → GitHub API request.`
   ].join('\n');
 
@@ -147,16 +147,16 @@ function getIntroMessage(): string {
 
   const simpleExamples = [
     chalk.yellowBright("🔧 Simple Prompts:"),
-    `  Om-Gitcli ${chalk.green('"create a private repo named my-ai-cli"')}`,
-    `  Om-Gitcli ${chalk.green('"list all repos for user tcoders16"')}`,
-    `  Om-Gitcli ${chalk.green('"push code to dev with message login fix"')}`
+    `  Om-GitAI ${chalk.green('"create a private repo named my-ai-cli"')}`,
+    `  Om-GitAI ${chalk.green('"list all repos for user tcoders16"')}`,
+    `  Om-GitAI ${chalk.green('"push code to dev with message login fix"')}`
   ].join('\n');
 
   const advancedExamples = [
     chalk.yellowBright("📊 Advanced Prompts:"),
-    `  Om-Gitcli ${chalk.green('"read code from src/index.ts in repo today on branch 28-May"')}`,
-    `  Om-Gitcli ${chalk.green('"analyze function fetchData in services/api.ts on branch main"')}`,
-    `  Om-Gitcli ${chalk.green('"look over recent pull request in repo backend-service"')}`
+    `  Om-GitAI ${chalk.green('"read code from src/index.ts in repo today on branch 28-May"')}`,
+    `  Om-GitAI ${chalk.green('"analyze function fetchData in services/api.ts on branch main"')}`,
+    `  Om-GitAI ${chalk.green('"look over recent pull request in repo backend-service"')}`
   ].join('\n');
 
   const comingSoon = [
@@ -222,7 +222,7 @@ if (args.length === 0) {
 if (!fs.existsSync(bootFile)) {
   console.log(
     boxen(
-      chalk.redBright("CLI not initialized. Run `Om-Gitcli` first."),
+      chalk.redBright("CLI not initialized. Run `Om-GitAI` first."),
       { padding: 1, borderColor: "red", borderStyle: "round" }
     )
   );
@@ -233,7 +233,7 @@ if (!fs.existsSync(bootFile)) {
 const program = new Command();
 
 program
-  .name('Om-Gitcli')
+  .name('Om-GitAI')
   .description('An AI-powered GitHub CLI by Omkumar')
   .version('1.0.0')
   .argument('<input>', 'Natural language GitHub command')
