@@ -1,129 +1,118 @@
-# githubAutoCLI
-# Om-GitCLI 🧠🚀
+Om-GitAI: Conversational GitHub Automation CLI
 
-> A natural language-powered GitHub automation CLI using OpenAI GPT-4o + GitHub REST API.
+Om-GitAI is a powerful AI-powered command-line tool that allows developers to interact with GitHub using natural language. Built with TypeScript, OpenAI GPT-4o, and GitHub REST APIs, this CLI enables voice-like DevOps workflows.
 
-**Om-GitCLI** lets developers manage GitHub repositories, branches, commits, and analyze code using natural language commands from the terminal.
+🚀 What is Om-GitAI?
 
----
+Om-GitAI is your AI assistant for automating GitHub workflows directly from the terminal. Just speak to it in plain English:
 
-## 🛠 Features
+Om-GitAI "create a private repo named ai-pipeline"
 
-👉 Translate plain English commands into GitHub actions
-👉 Automate repository creation, branch management, and pull requests
-👉 Push commits with messages using simple text
-👉 List all repos/files/branches for a GitHub user
-👉 Read and summarize code from any file in a public/private GitHub repo
-👉 AI-powered understanding of GitHub/DevOps queries
+Om-GitAI will parse your instruction, generate a structured JSON command using GPT-4o, and perform the GitHub operation using secure API requests.
 
----
+⸻
 
-## 💡 Example Commands
+💡 Why Use Om-GitAI?
+	•	Eliminate repetitive GitHub tasks
+	•	No need to remember GitHub CLI commands or REST API endpoints
+	•	Focus more on code, less on DevOps overhead
+	•	Boost developer productivity with LLM-powered command execution
 
-```bash
-Om-Gitcli "create a private repo named my-ai-cli"
-Om-Gitcli "push code to dev with message updated login route"
-Om-Gitcli "list all repos for user tcoders16"
-Om-Gitcli "read code from src/index.ts in repo githubAutoCLI owned by tcoders16 on branch main"
-Om-Gitcli "analyze function parseCommandFromInput in openaiService.ts"
-Om-Gitcli "create branch feature-xyz from dev in repo test-repo owned by tcoders16"
-```
+⸻
 
----
+🛠 Supported Commands
 
-## 📆 Installation
+You can execute tasks like:
+	•	✅ Create repositories (public/private)
+	•	✅ Push code to branches with commit messages
+	•	✅ Create new branches from source branches
+	•	✅ Open pull requests between branches
+	•	✅ List all your GitHub repositories
+	•	✅ Analyze any file’s content or functions using AI
+	•	✅ Read code from any file in a GitHub repo
+	•	✅ Look over recent commits and functions
+	•	✅ Answer DevOps, GitHub, or code-related questions
 
-### 1. Clone this repo
+⸻
 
-```bash
-git clone https://github.com/tcoders16/githubAutoCLI.git
-cd githubAutoCLI
-```
+🧠 How It Works
+	1.	You input a natural language command
+	2.	GPT-4o transforms it into a structured JSON action
+	3.	The CLI securely executes the GitHub API request
 
-### 2. Install dependencies
+Example:
 
-```bash
-npm install
-```
+Om-GitAI "create a pull request from dev to main in repo github-cli titled Add auth layer"
 
-### 3. Set environment variables
 
-Create a `.env` file in the root and add your keys:
+⸻
 
-```env
-OPENAI_API_KEY=your-openai-key
-GITHUB_TOKEN=your-github-token
-```
+🔍 Complex Prompt Examples
 
-### 4. Build the CLI
+Om-GitAI "read code from src/index.ts in today repo on branch 28-May"
+Om-GitAI "summarize what the utils/logger.ts file does in repo githubAutoCLI"
+Om-GitAI "what functions are defined in api.js on branch staging"
+Om-GitAI "create a new branch feature/payment from main in repo checkout-api"
 
-```bash
-npm run build
-```
 
-### 5. Link the CLI globally
+⸻
 
-```bash
-npm link
-```
+🧪 Use Cases
+	•	🚀 Launch GitHub repos with one-line prompts
+	•	📄 Understand legacy project code with summaries
+	•	🔧 Debug quickly by searching code functions via prompt
+	•	💬 Ask AI questions like “how to trigger deploy from GitHub?”
+	•	🎯 Analyze active pull requests and contributors
 
-Now you can run:
+⸻
 
-```bash
-Om-Gitcli
-```
+🧰 Tech Stack
+	•	🧠 OpenAI GPT-4o
+	•	🔧 TypeScript
+	•	📦 Node.js
+	•	📡 GitHub REST API
+	•	🎨 Chalk, Boxen, Figlet for CLI UI
+	•	📁 Axios, dotenv, commander, fs
 
----
+⸻
 
-## 🎨 Intro UI
+⚙ Installation
 
-On first launch, you'll see an ASCII-styled banner, image (via `catimg`), intro guide, supported features, and example prompts.
+npm install -g githubautocli
 
----
+Make sure to:
+	•	Add your .env with a valid OPENAI_API_KEY and GITHUB_TOKEN
 
-## 🧬 How It Works
+OPENAI_API_KEY=your_openai_key_here
+GITHUB_TOKEN=your_github_token_here
 
-1. **Text Input →** Natural language typed into terminal
-2. **OpenAI GPT-4o →** Converts to structured JSON
-3. **GitHub API →** Executes GitHub operations based on parsed JSON
-4. **Terminal Output →** Displays results using styled terminal UI
 
----
+⸻
 
-## 🦖 Tech Stack
+🧭 Getting Started
 
-* TypeScript + Node.js
-* OpenAI GPT-4o
-* GitHub REST API v3
-* CLI UI: `chalk`, `boxen`, `figlet`, `ora`
-* Utilities: `commander`, `dotenv`, `axios`
+To initiate the CLI with its boot message and branding:
 
----
+Om-GitAI
 
-## 🧪 Future Roadmap
+Once initialized, you can run any command like:
 
-* ✅ Code summarization + function analysis
-* 🔢 Voice-to-command integration
-* 🔢 PR review summaries
-* 🔢 Jenkins/GitHub Actions CI/CD integration
-* 🔢 Contributor insights, branch health checks
+Om-GitAI "list all repositories for user omkumarsolanki"
 
----
 
-## 👨‍💻 Developer
+⸻
 
-**Omkumar Solanki**
-AI Engineer | MERN Dev | iOS Dev | Web3 Strategist
+👤 Author
 
-* GitHub: [@tcoders16](https://github.com/tcoders16)
-* LinkedIn: [Omkumar Solanki](https://linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/)
+Omkumar Solanki
+AI Engineer | Full-Stack Dev | iOS + Web3 Enthusiast
+🔗 GitHub • LinkedIn
 
----
+⸻
 
-## 📄 License
+📜 License
 
-[MIT](LICENSE)
+MIT License © 2024 Omkumar Solanki
 
----_
+⸻
 
-*Designed and developed with ♥ by Omkumar Solanki. Follow for updates.*
