@@ -124,6 +124,6 @@ AI Engineer | MERN Dev | iOS Dev | Web3 Strategist
 
 [MIT](LICENSE)
 
----
+---_
 
 *Designed and developed with ♥ by Omkumar Solanki. Follow for updates.*
